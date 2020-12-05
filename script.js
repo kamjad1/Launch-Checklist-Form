@@ -20,6 +20,8 @@ window.addEventListener("load", function () {
    //let form = document.getElementById("formSubmit");
    let form = document.querySelector("form");
    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+   
       let pilotNameInput = document.querySelector("input[name=pilotName]");
       let copilotNameInput = document.querySelector("input[name=copilotName]");
       let fuelLevelInput = document.querySelector("input[name=fuelLevel]");
@@ -58,9 +60,9 @@ window.addEventListener("load", function () {
             document.getElementById("cargoStatus").innerHTML = `Cargo mass low enough for launch`;
             document.getElementById("faultyItems").style.visibility = `visible`;
          }
-         event.preventDefault();
+         //event.preventDefault();
       }
-
+   
    });
 });
 
