@@ -32,6 +32,7 @@ window.addEventListener("load", function () {
          alert("Please enter valid name for Pilot Name or Co-pilot Name (or both)");
       } else if (isNaN(fuelLevelInput.value) === true || isNaN(cargoMassInput.value) === true) {
          alert("Please enter valid number for Fuel Level or Cargo Mass (or both)");
+      
       } else {
          document.getElementById("pilotStatus").innerHTML = `Pilot ${pilotNameInput.value} Ready`;
          document.getElementById("copilotStatus").innerHTML = `Co-pilot ${copilotNameInput.value} Ready`;
